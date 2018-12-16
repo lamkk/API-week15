@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form action='/search4' method='POST' >
+<table>
+<p>使用此网页提交你的请求:</p>
+<tr><td>学号:</td><td><input name='news' type='TEXT' width='60'></td></tr>
+<tr><td>姓名:</td><td><input name='names' type='TEXT' width='60'></td></tr>
+<p>两项只需填一项！！</p>
+</table>
+<p>输入完毕，请点击下列按钮:</p>
+<p><input value='Do it!' type='submit'></p>
+</form>
+
+{% endblock %}
